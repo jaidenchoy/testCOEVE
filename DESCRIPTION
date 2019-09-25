@@ -1,0 +1,25 @@
+Package: immunarch
+Type: Package
+Title: Fast and Effortless Analysis of Large-Scale Immune Repertoire
+        Data
+Version: 0.3.2
+Author: ImmunoMind
+Maintainer: ImmunoMind <support@immunomind.io>
+Description: Fast and Effortless Analysis of Large-Scale Immune Repertoire Data.
+License: AGPL-3
+Imports: heatmap3, ggrepel (>= 0.8.0), reshape2 (>= 1.4.2), data.table,
+        DBI (>= 0.5), factoextra (>= 1.0.4), fpc, circlize, tidyr, MASS
+        (>= 7.3), plotly, Rtsne, readr, shiny, shinythemes, treemap,
+        igraph, airr
+Depends: R (>= 3.2.0), ggplot2 (>= 3.1.0), dplyr (>= 0.8.0), dtplyr (>=
+        0.0.2), dbplyr (>= 1.3.0), gridExtra (>= 2.2.1), ggpubr (>=
+        0.2)
+LinkingTo: Rcpp
+Suggests: knitr (>= 1.8), roxygen2 (>= 3.0.0), testthat (>= 1.0.2),
+        pkgdown (>= 0.1.0), assertthat, sparklyr
+URL: https://immunarch.com/, https://github.com/immunomind/immunarch
+BugReports: https://github.com/immunomind/immunarch/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-05-08 10:06:36 UTC; vdn

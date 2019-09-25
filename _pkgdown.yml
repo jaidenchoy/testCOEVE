@@ -1,0 +1,74 @@
+url: https://immunarch.com
+
+template:
+  params:
+    bootswatch: cosmo
+    ganalytics: UA-128418614-2
+
+authors:
+  ImmunoMind:
+    href: https://immunomind.io
+
+articles:
+- title: All tutorials
+  desc: ~
+  contents:
+  - '`1_introduction`'
+  - '`2_data`'
+  - '`3_basic_analysis`'
+  - '`4_overlap`'
+  - '`5_gene_usage`'
+  - '`6_diversity`'
+  - '`7_fixvis`'
+
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - articles
+    - reference
+    - news
+    right:
+    - im_link
+    - twitter
+    - github
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+    intro:
+      text: "Get started"
+      href: articles/1_introduction.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    articles:
+      text: Tutorials
+      menu:
+      - text: Introduction to **immunarch**
+        href: articles/1_introduction.html
+      - text: Working with data in **immunarch**
+        href: articles/2_data.html
+      - text: Basic analysis and clonality
+        href: articles/3_basic_analysis.html
+      - text: Repertoire overlap and public clonotypes
+        href: articles/4_overlap.html
+      - text: Gene usage analysis
+        href: articles/5_gene_usage.html
+      - text: Diversity estimation
+        href: articles/6_diversity.html
+      - text: Make your plots publication-ready with fixVis
+        href: articles/7_fixvis.html
+    news:
+      text: Changelog
+      href: news/index.html
+    twitter:
+      icon: fa-lg fa-twitter
+      href: http://twitter.com/immunomind
+    im_link:
+      text: ImmunoMind
+      href: https://immunomind.io
+    github:
+      icon: fa-github
+      href: https://github.com/immunomind/immunarch

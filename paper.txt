@@ -1,0 +1,43 @@
+vis(repOverlap(DATA))
+vis(geneUsage(DATA))
+vis(geneUsage(DATA))
+
+fixVis()
+
+
+MiXCR
+IMGT
+AIRR
+10xGenomics
+VDJtools
+MiTCR
+MiGEC
+Migmap
+tcR
+
+repLoad()
+
+
+repExplore()
+repClonality()
+repOverlap()
+repOverlapAnalysis()
+geneUsage()
+geneUsageAnalysis()
+repDiversity()
+
+repLoad("~/Downloads/mixcr.txt")
+
+
+# Overlap of repertoires using Jaccard and Morisita-Horn's indices
+result = repOverlap(DATA, "jaccard")  %>% vis()
+result = repOverlap(DATA, "morisita") %>% vis()
+
+# Jensen-Shannon divergence applied to gene usage
+result  = geneUsage(DATA, "HomoSapiens.TRBV") %>% vis()
+result2 = geneUsageAnalysis(result, "js")     %>% vis()
+
+# Diversity estimation using D50 and Chao1 indices
+result = repDiversity(DATA, "d50")   %>% vis()
+result = repDiversity(DATA, "chao1") %>% vis()
+
